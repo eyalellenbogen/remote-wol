@@ -2,7 +2,7 @@ const wolService = require('./wol.service');
 module.exports = function (router) {
     var wol = function (router, basePath) {
         function register() {
-            router.post(basePath + '/:address', wolService)
+            router.post(basePath + '/:target', wolService)
         }
 
         return {
