@@ -5,6 +5,7 @@ const machines = {
 }
 
 module.exports = function (req, res, next) {
+    console.log('request was made for machine ' + req.params.target);
     const target = machines[req.params.target];
 
     if (!target) {
