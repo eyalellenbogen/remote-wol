@@ -23,4 +23,4 @@ app.use('/api', function (req, res, next) {
 app.use('/api', router);
 
 app.listen(port);
-console.log("Starting web server on " + port);
+console.log("Starting remote-wol on port " + port);
