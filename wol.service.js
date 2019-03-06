@@ -10,7 +10,7 @@ module.exports = function (req, res, next) {
     if (!target) {
         res.status(404).send('Target machine not found');
     }
-    wol.wake(target, (err, success) => {
+    wol.wake(target, function (err, success) {
         if (err) {
             res.status(500).send('Something happened: ' + err);
         } else {
