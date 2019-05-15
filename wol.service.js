@@ -1,7 +1,7 @@
 const wol = require('wol');
 
 const machines = {
-    mediaCenter: 'D0:50:99:11:6A:D0'
+    mediaCenter: '00:0E:C6:C0:A6:A8'
 }
 
 module.exports = function (req, res, next) {
